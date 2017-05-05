@@ -1,5 +1,5 @@
 import {defineSupportCode} from 'cucumber';
-import RestfulBread from '../../';
+import BreadRest from '../../';
 import assert from 'assert';
 
 defineSupportCode(function({Given, When, Then}) {
@@ -15,24 +15,8 @@ defineSupportCode(function({Given, When, Then}) {
 
   });
 
-  Given('xxx', function(){
-
-  });
-
-  Given('xxx', function(){
-
-  });
-
-  Given('xxx', function(){
-
-  });
-
-  Given('xxx', function(){
-
-  });
-
   When('I instantiate "{instanceName}"', function(instanceName){
-    this.instances[instanceName] = new RestfulBread(this.instanceOptions);
+    this.instances[instanceName] = new BreadRest(this.instanceOptions);
   });
 
   When('I call and observe "{instance}.{method}"', function(instance, method){

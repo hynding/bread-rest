@@ -1,1 +1,1 @@
-module.exports = require('./dist/bread-rest');
+module.exports = require('./dist/bread-rest').default;

@@ -1,0 +1,29 @@
+{
+  "name": "bread-rest",
+  "version": "0.5.0",
+  "description": "An extendable, unassuming utility for standing up RESTful methods with CRUD/SCRUD (search + crud) persistent storage, or (as I prefer) BREAD [Browse, Read, Edit, Add, Destroy]",
+  "main": "index.js",
+  "scripts": {
+    "build-local-continuous": "babel src --watch -d dist",
+    "build-local": "babel src -d dist",
+    "feature-test": "cucumberjs --compiler js:babel-core/register",
+    "prefeature-test": "npm run build-local",
+    "prepublish": "npm run build-local",
+    "test": "npm run feature-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hynding/bread-rest.git"
+  },
+  "author": "Steve Hynding",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hynding/bread-rest/issues"
+  },
+  "homepage": "https://github.com/hynding/bread-rest#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "cucumber": "^2.0.0-rc.9"
+  }
+}
